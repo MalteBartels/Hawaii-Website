@@ -1,0 +1,207 @@
+.container {
+  animation: fade-in 0.5s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-width: 1100px;
+}
+
+@keyframes fade-in {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 700px;
+  height: 50px;
+  margin: 0;
+  background-color: rgba(245,245,255,0.75);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.header__logo {
+  transition: 0.15s ease-in-out;
+  display: block;
+  height: 100%;
+  float: left;
+  margin: 5px 15px;
+  font-size: 40px;
+  color: rgb(0, 192, 251);
+}
+
+.header__logo:hover {
+  transition: 0.15s ease-in-out;
+  color: rgb(245, 205, 3);
+}
+
+.header__menu {
+  display: block;
+  height: 100%;
+  float: right;
+  margin: 0;
+}
+
+.header__menu--item {
+  transition: 0.15s ease-in-out;
+  display: block;
+  float: right;
+  margin: 5px 15px;
+  font-size: 30px;
+  vertical-align: middle;
+  color: rgb(0, 192, 251);
+}
+
+.header__menu--item:hover {
+  transition: 0.15s ease-in-out;
+  color: rgb(245, 205, 3);
+}
+
+button {
+  transition: 0.15s ease-in-out;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.button--primary {
+  border: 3px solid rgb(178, 255, 23);
+  color: white;
+  background: rgb(178, 255, 23);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.button--primary:hover {
+  transition: 0.15s ease-in-out;
+  background-color: rgb(245, 205, 3);
+  border: 3px solid white;
+}
+
+.button--flat {
+  border: none;
+  background: transparent;
+  color: rgb(0, 192, 251);
+  font-family: "Fjalla One", sans-serif;
+}
+
+.button--flat:hover {
+  transition: 0.15s ease-in-out;
+  color: rgb(245, 205, 3);
+}
+
+.content-box {
+  display: block;
+  width: auto;
+  height: auto;
+  min-height: 30vh;
+  margin: 0;
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.content-box.content-box--image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 85vh;
+}
+
+.content-box.content-box--image.image-welcome {
+  background-image: url("../img/welcome1.jpg");
+}
+
+.content-box.content-box--image.image-links {
+  background-image: url("../img/mountains.jpg");
+}
+
+.content-box.content-box--image.image-contact {
+  background-image: url("../img/contact.jpg");
+}
+
+
+.content-box.content-box--image.image-legal {
+  background-image: url("../img/legal.jpg");
+}
+
+
+
+.content-box.content-box--solid-accent {
+  background-color: rgb(255, 255, 255);
+}
+
+.content-box.content-box--solid-standard {
+  background-color: rgb(240, 240, 250);
+}
+
+.content-box__body {
+  margin: 30px 0;
+}
+
+.content-box__text {
+  display: inline-block;
+  max-width: 800px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: rgb(148, 138, 137)
+}
+
+h1.content-box__header {
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 90px;
+  text-align: center;
+  margin-top: 30vh;
+  margin-bottom: 50px;
+}
+
+h2.content-box__header {
+  color: rgb(245, 205, 3);
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 45px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.grid-3rd {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.grid .image-block {
+  display: inline-block;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.grid .image-block__mask {
+  display: block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 10px auto;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.grid .description {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin: 10px auto;
+  color:  rgb(107, 97, 95);
+}
