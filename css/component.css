@@ -114,20 +114,20 @@ button {
 }
 
 .content-box.content-box--image.image-welcome {
-  background-image: url("../img/welcome1.jpg");
+  background-image: url("../img/backgrounds/welcome.jpg");
 }
 
 .content-box.content-box--image.image-links {
-  background-image: url("../img/mountains.jpg");
+  background-image: url("../img/backgrounds/links.jpg");
 }
 
 .content-box.content-box--image.image-contact {
-  background-image: url("../img/contact.jpg");
+  background-image: url("../img/backgrounds/contact.jpg");
 }
 
 
 .content-box.content-box--image.image-legal {
-  background-image: url("../img/legal.jpg");
+  background-image: url("../img/backgrounds/legal.jpg");
 }
 
 
