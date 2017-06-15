@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 .container {
   animation: fade-in 0.5s ease-out;
   position: absolute;
@@ -13,7 +19,9 @@
 }
 
 .header {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,8 +37,7 @@
   transition: 0.15s ease-in-out;
   display: block;
   height: 100%;
-  float: left;
-  margin: 5px 15px;
+  margin: auto 15px;
   font-size: 40px;
   color: rgb(0, 192, 251);
 }
@@ -42,9 +49,7 @@
 
 .header__menu {
   display: block;
-  height: 100%;
-  float: right;
-  margin: 0;
+  margin: auto 0;
 }
 
 .header__menu--item {
@@ -171,21 +176,22 @@ h2.content-box__header {
 
 .grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: stretch;
   flex-direction: row;
 }
 
 .grid-3rd {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  flex-grow: 1;
+  width: 300px;
 }
 
 .grid .image-block {
   display: inline-block;
-  min-width: 300px;
-  min-height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .grid .image-block__mask {
