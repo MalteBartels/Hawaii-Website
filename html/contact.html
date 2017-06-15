@@ -25,25 +25,20 @@
         <div class="content-box__footer"></div>
       </div>
       <div id="letsgo" class="content-box content-box--solid content-box--solid-standard">
-        <h2 class="content-box__header">Unsere Daten:</h2>
+        <h2 class="content-box__header">Schreiben sie uns!</h2>
         <div class="content-box__body">
-          <div class="grid">
-            <div class="grid-3rd">
-              <h6 class="description">Mail:</h6>
-                <p class="content-box__text">Schreiben Sie uns!</p>
-              <a><button class="button--flat">hawaii@example.com</button></a>
-            </div>
-            <div class="grid-3rd">
-              <h6 class="description">Telefon</h6>
-                <p class="content-box__text">An Werktagen von 9 - 16 Uhr sind wir für Sie da!</p>
-                <a><button class="button--flat">+49 0123 45678</button></a>
-            </div>
-            <div class="grid-3rd">
-              <h6 class="description">Facebook Aufritt</h6>
-              <p class="content-box__text">Hier finden Sie in Kürze unsere Facebook Seite</p>
-              <a href="https://www.facebook.com" target="_blank"><button class="button--flat">Coming soon...</button></a>
-            </div>
-          </div>
+          <form action="mailto:maheba@gmx.de" method="post" enctype="text/plain">
+            <fieldset>
+              <h6 class="description">Name:</h6>
+              <input class="input-field textfield" type="text" name="name">
+              <h6 class="description">E-Mail:</h6>
+              <input class="input-field textfield" type="text" name="mail">
+              <h6 class="description">Nachricht:</h6>
+              <textarea class="input-field textarea" rows="7" name="message"></textarea>
+            </fieldset>
+            <input class="button button--secondary" type="submit" value="Send">
+            <input class="button button--secondary" type="reset" value="Reset">
+          </form>
         </div>
         <div class="content-box__footer"></div>
       </div>
