@@ -227,6 +227,49 @@ h6.description {
   color:  rgb(107, 97, 95);
 }
 
+
+form,
+fieldset {
+  outline: none;
+  border: none;
+  margin: none;
+  padding: none;
+}
+
+.input-field {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 15px 0;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color:  rgb(107, 97, 95);
+  border: none;
+  background: white;
+}
+
+.input-field.accent {
+  background: rgb(240, 240, 250);
+}
+
+.textfield {
+  height: 40px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.grid .textfield {
+  width: 200px;
+}
+
+.textarea {
+  width: 80%;
+  max-width: 500px;
+}
+
+.grid .textarea {
+  width: 200px;
+}
+
 @media screen and (max-width: 1000px) {
   .content-box {
     padding-left: 10px;
