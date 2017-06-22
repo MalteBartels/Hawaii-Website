@@ -294,35 +294,39 @@ fieldset {
 
 @media screen and (max-width: 850px) {
   .grid-3rd {
-    width: 200px;
-    margin-top: 20px;
+    width: auto;
+    max-width: 200px;
+    margin: 20px 10px 0 10px;
   }
 
   .grid .image-block {
-    width: 200px;
-    height: 200px;
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
   }
 
   .grid .image-block__mask {
-    width: 200px;
-    height: 200px;
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
   }
 }
 
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .header {
-    height: 30px;
+    height: 40px;
   }
 
   .header__logo {
     margin: auto 5px;
-    font-size: 24px;
+    font-size: 35px;
   }
 
   .header__menu--item {
     margin: 5px;
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .button--flat {
@@ -346,7 +350,9 @@ fieldset {
   h2.content-box__header {
     font-size: 30px;
   }
+}
 
+@media screen and (max-width: 700px) and (orientation: portrait) {
   .grid {
     align-items: center;
     flex-direction: column;
@@ -359,5 +365,73 @@ fieldset {
   .grid .description {
     font-size: 14px;
     margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .grid-3rd {
+    margin-top: 20px;
+  }
+
+  .grid .description {
+    font-size: 14px;
+    margin: 10px auto;
+  }
+
+  .header__menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding-top: 40px;
+    cursor: pointer;
+  }
+
+  .header__menu::before {
+    transition: 0.15s ease-in-out;
+    content: '...';
+    position: absolute;
+    right: 15px;
+    top: -15px;
+    color: rgb(0, 192, 251);
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .header__menu:hover::before {
+    transition: 0.15s ease-in-out;
+    color: rgb(245, 205, 3);
+  }
+
+  .header__menu--item {
+    transition: .3s ease-in-out;
+    display: none;
+    float: none;
+    margin: 0;
+    padding: 10px 5px 10px 10px;
+    background: rgba(245,245,255,0.75);
+    vertical-align: middle;
+    color: rgb(0, 192, 251);
+    opacity: 0;
+  }
+
+  .header__menu--item:hover {
+    transition: 0.15s ease-in-out;
+    color: rgb(245, 205, 3);
+  }
+
+  .header__menu:hover .header__menu--item {
+    transition: .3s ease-in-out;
+    display: block;
+    opacity: 1;
   }
 }
