@@ -116,7 +116,7 @@ button,
   background: transparent;
 }
 
-.button--flat:hover {
+.link:hover, .button--flat:hover {
   transition: 0.15s ease-in-out;
   color: rgb(245, 205, 3);
 }
