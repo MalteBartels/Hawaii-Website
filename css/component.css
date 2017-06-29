@@ -102,12 +102,18 @@ button,
   color: white;
 }
 
+.link,
 .button--flat {
   border: none;
   background: transparent;
   color: rgb(0, 192, 251);
   font-family: "Fjalla One", sans-serif;
   width: auto;
+}
+
+.button--flat {
+  border: none;
+  background: transparent;
 }
 
 .button--flat:hover {
