@@ -69,6 +69,7 @@
 button,
 .button {
   transition: 0.15s ease-in-out;
+  cursor: pointer;
   display: inline-block;
   margin: 3px;
   width: 150px;
