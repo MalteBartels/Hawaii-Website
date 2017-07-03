@@ -375,6 +375,17 @@ fieldset {
   }
 }
 
+@media screen and (min-width: 2000px) {
+
+  .grid {
+    justify-content: center;
+  }
+
+  .grid-3rd {
+    margin: 15px 100px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .grid {
     align-items: center;
