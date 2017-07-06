@@ -1,0 +1,127 @@
+.header {
+  background-color: rgba(245,245,255,0.75);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.header__logo {
+  color: rgb(0, 192, 251);
+}
+
+.header__logo:hover {
+  color: rgb(245, 205, 3);
+}
+
+.header__menu--item {
+  color: rgb(0, 192, 251);
+}
+
+.header__menu--item:hover {
+  color: rgb(245, 205, 3);
+}
+
+.button--primary {
+  border-color: rgb(178, 255, 23);
+  color: white;
+  background-color: rgb(178, 255, 23);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.button--primary:hover {
+  background-color: rgb(245, 205, 3);
+  border: 3px solid rgb(245, 205, 3);
+}
+
+.button--secondary {
+  border-color: rgb(0, 192, 251);
+  color: rgb(0, 192, 251);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.button--secondary:hover {
+  background-color: rgb(0, 192, 251);
+  color: white;
+}
+
+.link,
+.button--flat {
+  color: rgb(0, 192, 251);
+  font-family: "Fjalla One", sans-serif;
+}
+
+.link:hover, .button--flat:hover {
+  color: rgb(245, 205, 3);
+}
+
+.content-box.content-box--image.image-welcome {
+  background-image: url("../img/backgrounds/welcome.jpg");
+}
+
+.content-box.content-box--image.image-links {
+  background-image: url("../img/backgrounds/links.jpg");
+}
+
+.content-box.content-box--image.image-contact {
+  background-image: url("../img/backgrounds/contact.jpg");
+}
+
+
+.content-box.content-box--image.image-legal {
+  background-image: url("../img/backgrounds/legal.jpg");
+}
+
+.content-box__text {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(148, 138, 137);
+}
+
+h1.content-box__header {
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h2.content-box__header {
+  color: rgb(245, 205, 3);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h6.description {
+  font-family: "Open Sans", sans-serif;
+  color:  rgb(107, 97, 95);
+}
+
+.input-field {
+  font-family: sans-serif;
+  color:  rgb(107, 97, 95);
+}
+
+/* Dropdown menu color*/
+
+@media screen and (max-width: 600px) {
+  .header__menu::before {
+    color: rgb(0, 192, 251);
+  }
+  .header__menu:hover::before {
+    color: rgb(245, 205, 3);
+  }
+  .header__menu--item {
+    transition: .3s ease-in-out;
+    display: none;
+    float: none;
+    margin: 0;
+    padding: 10px 5px 10px 10px;
+    background: rgba(245,245,255,0.75);
+    vertical-align: middle;
+    color: rgb(0, 192, 251);
+    opacity: 0;
+  }
+  .header__menu--item:hover {
+    transition: 0.15s ease-in-out;
+    color: rgb(245, 205, 3);
+  }
+
+  .header__menu:hover .header__menu--item {
+    transition: .3s ease-in-out;
+    display: block;
+    opacity: 1;
+  }
+}
