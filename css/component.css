@@ -154,6 +154,7 @@ button,
 
 .content-box__text {
   display: block;
+  margin: 0 auto;
   max-width: 800px;
   font-family: sans-serif;
   font-size: 18px;
