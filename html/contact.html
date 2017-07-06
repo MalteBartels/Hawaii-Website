@@ -1,9 +1,10 @@
 <!DOCTYPE = html>
 <html>
   <head>
-    <title>Hawaii - Home </title>
+    <title>Hawaii - Kontakt </title>
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans" rel="stylesheet">
     <link href="../css/component.css" rel="stylesheet" type="text/css" />
+    <link href="../css/override.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" title="Hawaii"></meta>
   </head>
@@ -27,18 +28,18 @@
       <div id="letsgo" class="content-box content-box--solid content-box--solid-standard">
         <h2 class="content-box__header">Schreiben sie uns!</h2>
         <div class="content-box__body">
-          <form action="mailto:maheba@gmx.de" method="post" enctype="text/plain">
+          <form id="contactform" action="mailto:maheba@gmx.de" method="post" enctype="text/plain">
             <fieldset>
               <h6 class="description">Name:</h6>
               <input class="input-field textfield" type="text" name="name">
               <h6 class="description">E-Mail:</h6>
-              <input class="input-field textfield" type="text" name="mail">
+              <input class="input-field textfield" type="email" name="mail">
               <h6 class="description">Nachricht:</h6>
               <textarea class="input-field textarea" rows="7" name="message"></textarea>
             </fieldset>
-            <input class="button button--secondary" type="submit" value="Send">
-            <input class="button button--secondary" type="reset" value="Reset">
           </form>
+          <button id="sendbutton" class="button button--secondary">Senden</button>
+          <button id="resetbutton" class="button button--secondary">Zurücksetzen</button>
         </div>
         <div class="content-box__footer"></div>
       </div>
@@ -46,5 +47,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/app.js"></script>
+    <script src="../js/contactform.js"></script>
   </body>
 </html>
