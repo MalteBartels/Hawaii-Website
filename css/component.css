@@ -69,6 +69,7 @@
 button,
 .button {
   transition: 0.15s ease-in-out;
+  cursor: pointer;
   display: inline-block;
   margin: 3px;
   width: 150px;
@@ -102,6 +103,7 @@ button,
   color: white;
 }
 
+.link,
 .button--flat {
   border: none;
   background: transparent;
@@ -110,7 +112,12 @@ button,
   width: auto;
 }
 
-.button--flat:hover {
+.button--flat {
+  border: none;
+  background: transparent;
+}
+
+.link:hover, .button--flat:hover {
   transition: 0.15s ease-in-out;
   color: rgb(245, 205, 3);
 }
@@ -257,6 +264,23 @@ fieldset {
   max-width: 300px;
 }
 
+.textfield.error {
+  border-bottom: 1px solid red;
+  animation: error 0.25s linear;
+}
+
+@keyframes error {
+  25% {
+    transform: translateX(5%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
+}
+
 .grid .textfield {
   width: 200px;
 }
@@ -365,6 +389,17 @@ fieldset {
   .grid .description {
     font-size: 14px;
     margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+
+  .grid {
+    justify-content: center;
+  }
+
+  .grid-3rd {
+    margin: 15px 100px;
   }
 }
 
