@@ -264,6 +264,23 @@ fieldset {
   max-width: 300px;
 }
 
+.textfield.error {
+  border-bottom: 1px solid red;
+  animation: error 0.25s linear;
+}
+
+@keyframes error {
+  25% {
+    transform: translateX(5%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
+}
+
 .grid .textfield {
   width: 200px;
 }
